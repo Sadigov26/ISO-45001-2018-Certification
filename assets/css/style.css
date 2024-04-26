@@ -1,0 +1,411 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#wrappper {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrappperContainer {
+    width: 80%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.leftBox {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+.leftBox h5 {
+    font-size: 13px;
+    font-weight: 300;
+    color: #CCCFD3;
+    cursor: pointer;
+}
+
+.leftBox h1 {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    color: #343F52;
+    cursor: pointer;
+}
+
+.leftBox p {
+    font-size: 20px;
+    font-weight: 100;
+    width: 90%;
+    color: #454951;
+    cursor: pointer;
+}
+
+.leftBox .btnBox {
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: center;
+}
+
+.leftBox .btnBox button {
+    font-size: 17px;
+    font-weight: 500;
+    padding: 12px 25px;
+    border-radius: 10px;
+    border: 1px solid saddlebrown;
+    color: white;
+    cursor: pointer;
+    background-color: #252D6C;
+}
+
+.leftBox .btnBox a {
+    font-size: 17px;
+    font-weight: 500;
+    padding: 2px 4px;
+    color: #220D4E;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 1px solid #252D6C;
+}
+
+.rightBox {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightBox .imgBox {
+    background-image: url(../IMAGE/iso-ban-3-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    width: 90%;
+}
+
+@media screen and (min-width:300px) and (max-width:945px) {
+    #wrappper {
+
+        .wrappperContainer {
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 20px;
+            width: 100%;
+
+            .leftBox {
+                width: 100%;
+            }
+
+            .rightBox {
+                .imgBox {
+                    max-width: 100%;
+                }
+
+                width: 100%;
+            }
+        }
+    }
+
+    #analysis {
+        flex-wrap: wrap;
+
+        .containerEssential {
+            flex-wrap: wrap;
+
+        }
+    }
+
+
+}
+
+
+
+#aboutSite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+
+}
+
+.aboutSiteContainer {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 80%;
+
+    p {
+        letter-spacing: 1px;
+        line-height: 26px;
+    }
+}
+
+#roadmapSec {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+
+    .roadmapSecContainer {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 80%;
+
+        p {
+            letter-spacing: 1px;
+            line-height: 26px;
+        }
+
+    }
+}
+
+li {
+    display: flex;
+
+}
+
+#catagorySec {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#catagorySec .catagorySecContainer {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+
+}
+
+.navbarContainer {
+    display: flex;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    background-color: #D0D3D5;
+    padding: 20px;
+    gap: 20px;
+}
+
+.navItem {
+    padding: 20px;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    border-radius: 10px;
+    background-color: #343F52;
+    box-sizing: border-box;
+}
+
+.primaryContainer {
+    display: flex;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.certification {
+    padding: 20px;
+    width: 48%;
+    display: flex;
+    border-bottom: 2px solid rgb(192, 190, 190);
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    h5 {
+        color: rgb(0, 0, 110);
+        font-size: 20px;
+    }
+
+    button {
+        width: 150px;
+        padding: 10px;
+        border-radius: 100px;
+        color: orangered;
+        border-color: rgb(0, 0, 110);
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:945px) {
+    #catagorySec {
+        .catagorySecContainer .navbarContainer {
+            flex-wrap: wrap;
+
+            .navItem {
+                width: 100%;
+                padding: 30px;
+            }
+        }
+    }
+
+    @media screen and (min-width:300px) and (max-width:700px) {
+        #catagorySec {
+
+            .primaryContainer {
+                flex-wrap: wrap;
+
+                .certification {
+                    width: 100%;
+                    padding: 30px;
+                }
+            }
+        }
+    }
+
+}
+
+#analysis {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerEssential {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    width: 80%;
+}
+
+.essential {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Benefits {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rightBox .imgdiv {
+    background-image: url(../IMAGE/api-spec-q1-start-your-journey-today.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    width: 90%;
+}
+
+#journey {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.journeyContainer {
+    width: 80%;
+    background-color: #1B3A56;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .btnBox {
+        a {
+            color: white;
+        }
+    }
+}
+
+.leftBox {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    padding-left: 20px;
+
+    h6 {
+        color: white;
+        font-size: 42px;
+        font-weight: 700;
+        letter-spacing: -0.2px;
+        cursor: pointer;
+    }
+
+    .our {
+        color: white;
+
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:945px) {
+    #journey {
+        .journeyContainer {
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .leftBox {
+                padding-top: 25px;
+                padding-bottom: 25px;
+                width: 100%;
+
+                h6 {
+                    font-size: 24px;
+                }
+
+                .our {
+                    font-size: 15px;
+                }
+
+                .btnBox {
+                    a{
+                        font-size:15px ;
+                    }
+                    button {
+                        padding: 9px;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .btnBox {
+                width: 100%;
+            }
+        }
+    }
+
+}
